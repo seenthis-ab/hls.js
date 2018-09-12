@@ -14,4 +14,4 @@ RUN npm install
 RUN mkdir /code
 COPY . /code
 WORKDIR /code
-CMD ["sh", "-c", "ln -s -f -T /node_modules /code/node_modules && /bin/bash"]
+CMD ["sh", "-c", "ln -s -f -T /node_modules /code/node_modules || /bin/bash"]
